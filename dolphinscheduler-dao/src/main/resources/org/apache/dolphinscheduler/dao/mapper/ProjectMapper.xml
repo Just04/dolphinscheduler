@@ -82,9 +82,9 @@
     </select>
     <select id="queryProjectListPaging" resultType="org.apache.dolphinscheduler.dao.entity.Project">
         select
-            <include refid="baseSqlV2">
-                <property name="alias" value="p"/>
-            </include>
+        <include refid="baseSqlV2">
+            <property name="alias" value="p"/>
+        </include>
         from t_ds_project p
         where 1=1
         <if test="projectsIds != null and projectsIds.size() > 0">
@@ -98,7 +98,6 @@
             OR p.description LIKE concat('%', #{searchName}, '%')
             )
         </if>
-        group by p.id
         order by p.id desc
     </select>
     <select id="queryAuthedProjectListByUserId" resultType="org.apache.dolphinscheduler.dao.entity.Project">
