@@ -32,6 +32,8 @@
 @REM set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
 @REM MAVEN_SKIP_RC - flag to disable loading of mavenrc files
 @REM ----------------------------------------------------------------------------
+@REM mvn clean install -Prelease "-Dmaven.test.skip=true" "-Dspotless.skip=true" "-Dcheckstyle.skip=true" "-Dexec.skip=true"----------------------------------------------------------------------------
+@REM ----------------------------------------------------------------------------
 
 @REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
 @echo off
